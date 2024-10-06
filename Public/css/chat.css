@@ -1,0 +1,213 @@
+*{
+    border-radius: 20px;
+}
+body{
+    margin: 0;
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url('/assets/images/pexels-pixabay-268415.jpg');
+    justify-content: center;
+    align-items: center;
+}
+#main-window{
+    background-color: black;
+    width: 68%;
+    height: 83%;
+    display: flex;
+    flex-direction: row;
+    padding: 0.3%;
+}
+#main-window #sidebar{
+    background-color: black;
+    height: 100%;
+    width: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sidebar .icons {
+    height: 5%;
+    width: 50%;
+}
+#sidebar #triangle{
+    margin-top: 25%;
+    height: 6%;
+}
+#sidebar #icon-text{
+    justify-content: center;
+    align-items: center;
+    color: rgb(106, 105, 105);
+    margin-top: 12%;
+    font-size: 13px;
+}
+#sidebar #messages{
+    height: 5.5%;
+    margin-top: 150%;
+}
+#main-window #chat-window{
+    background-color: rgb(249, 250, 252);
+    height: 100%;
+    width: 78%;
+    display: flex;
+    flex-direction: row;
+}
+#chat-window #chats{
+    background-color: cadetblue;
+    width: 30%;
+    height: 100%;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#chat-window #chatting-space{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 68%;
+}
+#main-window #info-box{
+    display: flex;
+    height: 100%;
+    width: 16%;
+    flex-direction: column;
+    margin-left: 0.3%;
+}
+#chats #search-box{
+    border-radius: 6px;
+    margin-top: 12px;
+    width: 85%;
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    background-color: rgb(219, 220, 255);
+    margin-bottom: 15px;
+}
+#chats #contact-space{
+    height: 8%;
+    border-radius: 6px;
+    width: 85%;
+    display: flex;
+    justify-content: left;
+    background-color: antiquewhite;
+}
+#chat-area{
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+#chat-area::-webkit-scrollbar {
+    display: none;
+}
+#chatting-space .message-box{
+    max-width: 98%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    justify-content: flex-start;
+    margin-bottom: 2%;
+}
+#chatting-space .sender-message-box{
+    max-width: 98%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 5%;
+    justify-content: flex-start;
+}
+.system-msg{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    align-self: center;
+    justify-self: center;
+    font-size: 15px;
+    background-color: rgb(250, 228, 248);
+    padding: 1%;
+    border-color: beige;
+    border-radius: 10px;
+    color: rgb(74, 47, 47);
+}
+.message-box .sender-avatar, .sender-message-box .sender-avatar{
+    margin-top: auto;
+    background-color: rgb(0, 183, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 3%;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+}
+.sender-message-box .sender-avatar{
+    margin-left: 3%
+}
+.message-box .message-content, .sender-message-box .message-content{
+    background-color: rgb(250, 228, 248);
+    padding: 2.5%;
+}
+.message-content .sender-name{
+    color: rgb(37, 39, 113);
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+.sender-message-box .message-content .sender-name{
+    color: rgb(37, 39, 113);
+    font-weight: 600;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+#chatting-space .message-type-box{
+    margin-top: auto;
+    margin-bottom: 1%;
+    height: 6%;
+    width: 94%;
+    border-radius: 10px;
+    background-color: rgb(237, 237, 247);
+    padding: 1.5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(150, 150, 179);
+}
+.message-type-box .paper-holder{
+    height: 100%;
+    width: 10%;
+    border-radius: 0%;
+}
+.message-type-box #message-area{
+    width: 80%;
+    background-color: rgb(237, 237, 247);
+    font-size: 15px;
+    outline: none;
+    border: 0px;
+}
+.paper-holder .paper{
+    width: 100%;
+    height: 100%;
+}
+#info-box #Group-Info{
+    background-color: white;
+    height: 49%;
+    margin-bottom: 3%;
+}
+#info-box #Group-Participants{
+    background-color: rgb(219, 220, 255);
+    height: 49%;
+    padding: 3%;
+}
+#Group-Info, #Group-Participants{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}

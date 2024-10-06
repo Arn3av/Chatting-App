@@ -1,0 +1,80 @@
+body{
+    background-image: url("../assets/images/Landing_Background.jpg");
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0px;
+}
+#heading{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+}
+#elements-container{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+#elements-container .elements{
+    background-color: blue;
+    font-size: 30px;
+    color: white;
+    padding: 2%;
+    font-weight: 200;
+    font-style: italic;
+    border-radius: 8%;
+    border: solid;
+    border-color: black;
+}
+#elements-container #create-room{
+    background-color: rgb(41, 65, 88);
+    width: fit-content;
+    cursor: pointer;
+}
+#elements-container #create-room:hover{
+    background-color: rgba(41, 65, 88, 0.7);
+}
+#room-buttons{
+    font-style: oblique;
+    margin-top: 3%;
+    color: whitesmoke;
+    font-size: 25px;
+}
+#room-buttons{
+    width: 25%;
+    display: none;
+}
+#room-buttons #chat-link{
+    margin-left: auto;
+}
+#chat-link, #copy-link{
+    font-size: 25px;
+    background-color: rgb(89, 89, 210);
+    color: aqua;
+    border-style: double;
+    cursor: pointer;
+}
+#chat-link:hover, #copy-link:hover{
+    background-color: rgba(89, 89, 210, 0.7)
+}
+#chat-link:active, #copy-link:active{
+    background-color: rgb(93, 93, 236);
+} 
+#room-link{
+    margin-top: 2%;
+    font-size: 24px;
+    color: white;
+    display: none;
+}
+#copy-status{
+    margin-top: 1%;
+    font-size: 19px;
+    color: rgb(209, 120, 25);
+    display: none;
+}

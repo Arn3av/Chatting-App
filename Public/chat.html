@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/chat.css"/>
+</head>
+<body>
+    <div id="main-window">
+    <div id="sidebar">
+        <img class = "icons" id = "triangle" src="/assets/Icons/white-triangle-shape(edited).png"/>
+        <img class= "icons" id= "messages" src="/assets/Icons/message.png"/>
+        <span id = "icon-text">All Chats</span>
+    </div>
+    <div id="chat-window">
+        <div id= "chats">
+            <div id="search-box"><span style="font-size: 13px; margin-left: 10%;" >Search</span></div>
+            <div id="contact-space">
+                <span style="margin-left: 10%; margin-top: 4%;"><b>Osman Campos</b></span>
+            </div>
+        </div>
+        <div id="chatting-space">
+            <div id="chat-area"></div>
+            <div class="message-type-box">
+                
+                <div class="paper-holder">
+                <img class="paper" id="attach" src="/assets/Icons/paper-clip - Copy.png" alt="">
+                </div>
+                <input type="text" id="message-area" placeholder="Your message">
+                <div class="paper-holder" >
+                <img class="paper" id="send-button" src="/assets/Icons/send.png" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="info-box">
+        <div id="Group-Info">
+            No Group is Selected
+        </div>
+        <div id="Group-Participants">
+            Open a Group chat to know about group Group Participants
+        </div>
+    </div>
+    </div>
+    <script src="/../socket.io/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
+    <!-- <script src="check.js"></script> -->
+</body>
+</html>
